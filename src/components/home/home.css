@@ -1,0 +1,100 @@
+.container {
+    background-image: url(../../assets/Background-Home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    border: 2px solid black;
+    display: flex;
+    margin: 1rem 2rem;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-size: 36px;
+    color: black;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.nav a:hover{
+    color: #FF8A00;
+}
+
+
+.diamond .logo {
+    margin-left: 2rem;
+    font-size: 25px;
+    
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+
+.container .name h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 128px;
+    font-style: italic;
+}
+.container .name h1 .cursor {
+    font-weight: 300;
+}
+
+.container .name span {
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container .name h3 {
+    font-family: 'Inconsolata', monospace;
+    padding-top: 1.2rem;
+    font-size: 36px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1s ease-in-out forwards;
+}
+
+.container .name a {
+    display: block;
+    border: 1px solid black;
+    background: transparent;
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: black;
+    border-radius: 71px;
+    transition: var(--transition);
+    width: 250px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1.5s ease-in-out forwards;
+}
+
+.container .name a:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

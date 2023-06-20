@@ -1,0 +1,121 @@
+.artist-container{
+    background-image: url(../../assets/Background-Members.png);
+    height: 100vh;
+}
+
+.artist-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.artist-nav a {
+    font-size: 36px;
+    color: black;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.artist-nav a:hover {
+    color: #FF8A00;
+}
+
+.tag {
+    margin: 1rem 5rem;
+    padding-top: 3rem;
+    border-top: 2px solid black;
+}
+
+.tag h1 {
+    font-size: 64px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1s ease-in-out forwards;
+}
+.tag .member {
+    font-size: 64px;
+    font-weight: 200;
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1.1s ease-in-out forwards;
+}
+
+.tag .tag-list {
+    width: 50%;
+    display: flex;
+    padding-left: 13rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+.tag .tag-list .tag-list-nomer {
+    display: flex;
+}
+
+
+.tag .tag-list .nomer {
+    font-weight: 200;
+    font-size: 65px;
+}
+
+.tag .tag-list-title {
+    margin-left: 3rem;
+}
+
+.tag-list-title .artist-name {
+    font-size: 36px;
+}
+
+.tag-list3D{
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1s ease-in-out forwards;
+}
+.tag-list2D{
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1.2s ease-in-out forwards;
+}
+.tag-listdev{
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 1.3s ease-in-out forwards;
+}
+
+
+
+.tag-list-title .artist-name a {
+    color: black;
+    transition: var(--transition);
+}
+
+
+.tag-list-title .artist-name a:hover {
+    color: #FF8A00;
+    border-bottom: 1px solid #FF8A00;
+}
+.tag-list-title h2 {
+    font-weight: bold;
+    font-size: 65px;
+    color: #FF8A00;
+}
+
+.tag-list-title h5 {
+    font-weight: 200;
+    font-size: 32;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
