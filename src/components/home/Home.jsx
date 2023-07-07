@@ -41,7 +41,6 @@ const Home = () => {
         <h1><span>.12</span>{text}{showCursor && <span className="cursor">|</span>}</h1>
         <h3>" a new visual experience. "</h3>
         <a onClick={()=> navigate('/work')}>W O R K S</a>
-        <a onClick={()=> navigate('/page')}>page</a>
       </div>
     </div>
   )

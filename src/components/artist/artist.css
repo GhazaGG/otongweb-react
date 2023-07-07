@@ -10,6 +10,7 @@
     padding: 0rem 5rem;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
+    border-bottom: 2px solid black;
 }
 
 .artist-nav a {
@@ -53,10 +54,18 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.memberlist div{
+
+.memberlist img{
     width: 210px;
     height: 209px;
-    background-color: #FF8A00;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.memberlist img:hover {
+    filter: grayscale(80%);
+    transform: scale(1.1);
+    border-radius: 0px;
 }
 
 .memberlist .img1{

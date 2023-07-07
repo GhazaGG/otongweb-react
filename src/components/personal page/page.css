@@ -44,6 +44,7 @@ h3 {
 }
 
 .member-content a {
+    cursor: pointer;
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -58,7 +59,7 @@ h3 {
     color: white;
 }
 
-.artist-nav{
+.page-nav{
     border-top: 1px solid black;
     width: 100%;
     padding: 0rem 2rem;
@@ -68,4 +69,13 @@ h3 {
     bottom: 5px;
     justify-content: space-between;
     font-weight: 800;
+    transition: var(--transition);
+}
+
+.page-nav a{
+    cursor: pointer;
+}
+
+.page-nav a:hover{
+    color: #FF8A00
 }
