@@ -10,7 +10,7 @@ const Work = () => {
       <div className='title'>
         <h1><span>M E M B E R S</span> W O R K S</h1>
       </div>
-      <div className="card-container">
+      {/* <div className="card-container">
         <article className='card card-1'>
           <div className="card-title">
             <h3>Otong Liquid Vape</h3>
@@ -50,7 +50,7 @@ const Work = () => {
             04
           </div>
         </article>
-      </div>
+      </div> */}
       <div className="footer">
         <a className='home' onClick={()=> navigate("/")}>// HOME</a>
         <h1>&copy; OTONGSTUDIO</h1>

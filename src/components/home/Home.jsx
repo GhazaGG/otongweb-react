@@ -9,7 +9,7 @@ const Home = () => {
   const navigate = useNavigate()
   const [text, setText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
-  const textToWrite = 'S tudio.'
+  const textToWrite = 'pxx'
   let index = 0
 
   useEffect(()=> {
@@ -38,8 +38,8 @@ const Home = () => {
         </div>
       </div>
       <div className="name">
-        <h1><span>Otong</span>{text}{showCursor && <span className="cursor">|</span>}</h1>
-        <h3>" Indonesian creative studio represent a new visual experience. "</h3>
+        <h1><span>.12</span>{text}{showCursor && <span className="cursor">|</span>}</h1>
+        <h3>" a new visual experience. "</h3>
         <a onClick={()=> navigate('/work')}>W O R K S</a>
       </div>
     </div>

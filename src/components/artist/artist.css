@@ -1,6 +1,7 @@
 .artist-container{
     background-image: url(../../assets/Background-Members.png);
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 .artist-nav{
@@ -22,91 +23,74 @@
     color: #FF8A00;
 }
 
-.tag {
-    margin: 1rem 5rem;
-    padding-top: 3rem;
-    border-top: 2px solid black;
+.content {
+    padding: 2.5rem 5rem;
+}
+.content h1{
+    font-size: 46px;
 }
 
-.tag h1 {
-    font-size: 64px;
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slide-up 1s ease-in-out forwards;
-}
-.tag .member {
-    font-size: 64px;
-    font-weight: 200;
-    font-style: italic;
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slide-up 1.1s ease-in-out forwards;
-}
-
-.tag .tag-list {
-    width: 50%;
+.member-container{
+    margin-top: 1rem;
     display: flex;
-    padding-left: 13rem;
-    margin-top: 3rem;
-    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0rem 5rem;
     justify-content: space-between;
-    height: 500px;
-}
-.tag .tag-list .tag-list-nomer {
-    display: flex;
 }
 
-
-.tag .tag-list .nomer {
-    font-weight: 200;
-    font-size: 65px;
+.member-container h1{
+    font-size: 76px;
 }
 
-.tag .tag-list-title {
-    margin-left: 3rem;
+.member-container span{
+    font-weight: 300;
 }
 
-.tag-list-title .artist-name {
-    font-size: 36px;
+.memberlist{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.tag-list3D{
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slide-up 1s ease-in-out forwards;
-}
-.tag-list2D{
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slide-up 1.2s ease-in-out forwards;
-}
-.tag-listdev{
-    opacity: 0;
-    transform: translateY(100%);
-    animation: slide-up 1.3s ease-in-out forwards;
+.memberlist div{
+    width: 210px;
+    height: 209px;
+    background-color: #FF8A00;
 }
 
-
-
-.tag-list-title .artist-name a {
-    color: black;
-    transition: var(--transition);
+.memberlist .img1{
+    border-radius: 0px 100px 0px 0px;
 }
-
-
-.tag-list-title .artist-name a:hover {
-    color: #FF8A00;
-    border-bottom: 1px solid #FF8A00;
+.memberlist .img2{
+    border-radius: 0px 0px 100px 0px;
 }
-.tag-list-title h2 {
-    font-weight: bold;
-    font-size: 65px;
-    color: #FF8A00;
+.memberlist .img3{
+    border-radius: 100px 0px 0px 0px;
 }
-
-.tag-list-title h5 {
-    font-weight: 200;
-    font-size: 32;
+.memberlist .img4{
+    border-radius: 0px 0px 0px 100px;
+}
+.memberlist .img5{
+    border-radius: 100px 0px 0px 0px;
+}
+.memberlist .img6{
+    border-radius: 0px 0px 100px 0px;
+}
+.memberlist .img7{
+    border-radius: 100px 100px 0px 100px;
+}
+.memberlist .img8{
+    border-radius: 100px 0px 0px 0px;
+}
+.memberlist .img9{
+    border-radius: 100px 0px 100px 0px;
+}
+.memberlist .img10{
+    border-radius: 100px;
+}
+.memberlist .img11{
+    border-radius: 100px 0px 0px 0px;
 }
 
 @keyframes slide-up {
