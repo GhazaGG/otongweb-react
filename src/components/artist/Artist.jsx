@@ -36,7 +36,7 @@ const Artist = () => {
                     <h1>EXPERIENCE</h1>
                 </div>
                 <div className="memberlist">
-                    <a onClick={()=> navigate('/pageVendttas')} onMouseEnter={() => setIsHovered(true)}
+                    <a onClick={()=> navigate('/pageVndttas')} onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}>
                         <img className='img1' src={vendttas} ></img>
                         {isHovered && <div className="visit">
