@@ -42,6 +42,7 @@ const Home = () => {
         <h3>" a new visual experience. "</h3>
         <a onClick={()=> navigate('/work')}>W O R K S</a>
       </div>
+      <footer>&copy; 2023 .12px All Rights Reserved</footer>
     </div>
   )
 }

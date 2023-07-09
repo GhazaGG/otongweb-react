@@ -9,8 +9,8 @@ import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
 
-  const vendttas = {
-    nama : "vendttas artwork",
+  const vndttas = {
+    nama : "vndttas artwork",
     role : '3D Artist',
     job : 'Compositor',
     bio1 : 'Faisal Firmansyah a.k.a Vndttas is 21 years-old 3D Designer & Digital Artist, study filmaking at Institut Seni Budaya Indonesia Bandung.',
@@ -137,7 +137,7 @@ const App = () => {
       <Route path='/' element={<Home />}/>
       <Route path='/work' element={<Work />}/>
       <Route path='/artist' element={<Artist />}/>
-      <Route path='/pageVendttas' element={<Page data={vendttas} />}/>
+      <Route path='/pageVndttas' element={<Page data={vndttas} />}/>
       <Route path='/pageRyzen' element={<Page data={ryzen} />}/>
       <Route path='/pageRio' element={<Page data={rio} />}/>
       <Route path='/pageBrian' element={<Page data={brian} />}/>

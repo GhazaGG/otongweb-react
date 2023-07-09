@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 /* .banner {
     height: 25rem;
@@ -60,7 +61,7 @@ h3 {
 }
 
 .page-nav{
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     width: 100%;
     padding: 0rem 2rem;
     font-size: 36px;

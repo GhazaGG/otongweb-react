@@ -1,6 +1,42 @@
+.pin-container {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: 10px;
+    justify-content: center;
+}
+
+.pin {
+    background-color: #FF8A00;
+    border-radius: 16px;
+    margin:15px 10px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.mainPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.pin.small{
+    grid-row-end: span 26;
+}
+.pin.medium{
+    grid-row-end: span 33;
+}
+.pin.large{
+    grid-row-end: span 45;
+}
+
 .work-container{
     height: 100vh;
-    background-image: url(../../assets/Background-Artwork.png);
 }
 
 .title {
@@ -14,72 +50,17 @@
     padding-right: 1rem;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin: 2rem 10rem;
-}
-.card-1{
-    background: url(../../assets/Group_2.png);
-    background-size:cover ;
-}
-/* .card-2{
-    background: url(../../assets//image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-.card-3{
-    background: url(../../assets/Group_1.png);
-}
-/* .card-4{
-    background: url(../../assets//Group_3.png);
-} */
-/* .card-2 .card-title, .card-4 .card-title {
-    color: white;
-} */
-
-.card {
-    height: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: var(--transition);
-}
-.card:hover {
-    transform: scale(1.1);
-    border: none;
-}
-.card-2 {
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-}
-
-.card-3{
-    border-right: 3px solid black;
-}
-
-
-.card .card-title {
-    font-size: 60px;
-}
-
-.card .card-title h5 {
-    font-weight: 300;
-    font-size: 30px;
-}
-
-.card-number {
-    color: #FF8A00;
-    font-size: 10rem;
-    text-align: center;
-}
-
 .footer{
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 0rem 2rem;
+    font-size: 36px;
     display: flex;
+    position: absolute;
+    bottom: 5px;
     justify-content: space-between;
-    margin: 0 10rem;
-    border-top: 2px solid black;
-    padding-top: .5rem;
+    font-weight: 800;
+    transition: var(--transition);
 }
 
 .footer a {
@@ -90,4 +71,8 @@
 
 .footer a:hover {
     color: #FF8A00;
+}
+
+.footer h1 {
+    font-size: 30px;
 }

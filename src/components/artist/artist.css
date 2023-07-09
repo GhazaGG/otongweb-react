@@ -15,6 +15,7 @@
 
 .artist-nav a {
     font-size: 36px;
+    font-weight: 700;
     color: black;
     cursor: pointer;
     transition: var(--transition);
@@ -49,11 +50,15 @@
 }
 
 .memberlist{
+
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
+.memberlist a{
+    position: relative;
+}
 
 .memberlist img{
     width: 210px;
@@ -62,9 +67,44 @@
     transition: var(--transition);
 }
 
+.memberlist .visit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    width: 100%;
+    height: 45px;
+    background-color: #FF8A00;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+.visit .nama{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    padding-left: 10px;
+}
+.visit .role{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    padding-left: 10px;
+}
+
+
+.memberlist a:hover .visit{
+    visibility: visible;
+    opacity: 1;
+}
+
 .memberlist img:hover {
-    filter: grayscale(80%);
-    transform: scale(1.1);
+    filter: brightness(60%);
+    /* transform: scale(1.1); */
     border-radius: 0px;
 }
 

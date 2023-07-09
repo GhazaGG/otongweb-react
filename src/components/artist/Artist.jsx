@@ -1,6 +1,7 @@
 import React from 'react'
 import './artist.css'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import vendttas from '../../assets/vendttas/ven.png'
 import rio from '../../assets/rio/rio.png'
 import ryzen from '../../assets/ryzen/ryzen.png'
@@ -17,6 +18,8 @@ import ghaza from '../../assets/ghaza/ghaza.png'
 
 const Artist = () => {
     const navigate= useNavigate()
+    const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <section className='artist-container'>
@@ -33,41 +36,125 @@ const Artist = () => {
                     <h1>EXPERIENCE</h1>
                 </div>
                 <div className="memberlist">
-                    <a onClick={()=> navigate('/pageVendttas')}>
+                    <a onClick={()=> navigate('/pageVendttas')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img1' src={vendttas} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">VNDTTAS</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageRyzen')}>
+                    <a onClick={()=> navigate('/pageRyzen')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img2' src={ryzen} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">MERYZEN</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageRio')}>
+                    <a onClick={()=> navigate('/pageRio')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img3' src={rio} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">SATRIO AJI</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageBrian')}>
+                    <a onClick={()=> navigate('/pageBrian')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img4' src={brian} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">NIOZZIN</p>
+                                <p className="role">2D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageAdam')}>
+                    <a onClick={()=> navigate('/pageAdam')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img5' src={adam} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">ADAMALFYSR</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageIslan')}>
+                    <a onClick={()=> navigate('/pageIslan')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img6' src={islan} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">ISLANGRH</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageExhozt')}>
+                    <a onClick={()=> navigate('/pageExhozt')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img7' src={dafa} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">EXHOZT</p>
+                                <p className="role">2D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageHolikPC')}>
+                    <a onClick={()=> navigate('/pageHolikPC')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img8' src={holik} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">HOLIKPC</p>
+                                <p className="role">3D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageGhaza')}>
+                    <a onClick={()=> navigate('/pageGhaza')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img9' src={ghaza} ></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">GHAZA</p>
+                                <p className="role">IT</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageYopan')}>
+                    <a onClick={()=> navigate('/pageYopan')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img10 ' src={yopan}></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">YOFAN</p>
+                                <p className="role">2D ARTIST</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageDoni')}>
+                    <a onClick={()=> navigate('/pageDoni')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img11 ' src={doni}></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">RAMDHONI</p>
+                                <p className="role">IT</p>
+                            </div>
+                        </div>}
                     </a>
-                    <a onClick={()=> navigate('/pageDepol')}>
+                    <a onClick={()=> navigate('/pageDepol')} onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
                         <img className='img12 ' src={depol}></img>
+                        {isHovered && <div className="visit">
+                            <div className='desc-container'>
+                                <p className="nama">DEPOAL</p>
+                                <p className="role">GRAPHIC DESIGNER</p>
+                            </div>
+                        </div>}
                     </a>
                 </div>
             </div>
