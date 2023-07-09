@@ -1,17 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './work.css'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import Pin from './Pin'
 import data from './imageObject'
 
 const Work = () => {
   const navigate = useNavigate()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(()=> {
+    const handleScroll = ()=> {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
 
   return (
     <section className='work-container' id='work'>
-      <div className='title'>
-        <h1><span>M E M B E R S</span> W O R K S</h1>
-      </div>
+      <nav className={scrolled ? 'work-nav scrolled' : 'work-nav'}>
+        <a className='home' onClick={()=> navigate("/")}>// HOME</a>
+        <div className='title'>
+          <h1><span>M E M B E R S</span> W O R K S</h1>
+        </div>
+        <h1 className='cc'>&copy; .12px</h1>
+      </nav>
+
       
       <div className='pin-container'>
         {
@@ -19,10 +42,6 @@ const Work = () => {
             <Pin key={data.id} pinSize = {data.size} imgSrc={data.imgSrc} artist={data.artist} pageLink={data.pageLink}/>
           ))
         }
-      </div>
-      <div className="footer">
-        <a className='home' onClick={()=> navigate("/")}>// HOME</a>
-        <h1>&copy; OTONGSTUDIO</h1>
       </div>
     </section>
   )
