@@ -111,41 +111,29 @@
 
 /* Mobile Devices */
 @media (max-width: 767px) {
-    .nav {
-    border: 2px solid black;
-    display: flex;
-    margin: 1rem 2rem;
-    padding: .5rem 1rem;
-    justify-content: space-between;
-}
+    .nav a {
+        font-size: 20px;
+    }
 
-.nav a {
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-    transition: var(--transition);
-    font-weight: 800;
-}
+    .diamond .logo {
+        display: none;
+    }
+    .container .name h1 {
+        font-size: 100px;
+        padding-right: 255px;
+    }
 
-.diamond .logo {
-    display: none;
-}
-.container .name h1 {
-    font-size: 100px;
-    padding-right: 255px;
-}
+    .container .name h3 {
+        font-size: 20px;
+    }
+    .container .name a {
+        width: 200px;
+        font-size: 13px ;
+    }
 
-.container .name h3 {
-    font-size: 20px;
-}
-.container .name a {
-    width: 200px;
-    font-size: 13px ;
-}
-
-.container footer{
-    font-size: 15px;
-}
+    .container footer{
+        font-size: 15px;
+    }
 }
 
 
