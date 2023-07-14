@@ -89,6 +89,7 @@
     /* background-color: #FF8A00; */
     margin-top: 5rem;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 .work-nav {
     width: 100%;
@@ -101,6 +102,7 @@
     top: 0;
     z-index: 99;
     box-shadow: none;
+    font-weight: 800;
 }
 .work-nav.scrolled {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

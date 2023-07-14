@@ -33,12 +33,12 @@ const Home = () => {
       <div className="nav">
         <a onClick={() => navigate("/")}>// ABOUT</a>
         <div className='diamond'>
-          <a onClick={() => navigate('/artist')}>Member</a>
+          <a onClick={() => navigate('/artist')}>// MEMBER</a>
           <GiDiamonds className='logo' />
         </div>
       </div>
       <div className="name">
-        <h1><span>.12</span>{text}{showCursor && <span className="cursor">|</span>}</h1>
+        <h1 className='title'><span>.12</span>{text}{showCursor && <span className="cursor">|</span>}</h1>
         <h3>" a new visual experience. "</h3>
         <a onClick={()=> navigate('/work')}>W O R K S</a>
       </div>
