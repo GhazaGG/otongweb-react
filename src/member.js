@@ -7,7 +7,10 @@ const member = {
         bio2: 'He starting freelance as a video editor since 2017 and then focusing with 3D Creation since 2019, now he currently employed at Maximum The Ultimate',
         work : 'https://www.instagram.com/vndttas/',
         foto : require('./assets/vendttas/ven.png'),
-        background :require('./assets/vendttas/banner - ven.png')
+        background :require('./assets/vendttas/banner - ven.png'),
+        instagram : 'https://www.instagram.com/vndttas/',
+        twitter: 'https://twitter.com/vndttas',
+        website: 'vndttas.com'
     },
     ryzen : {
         nama : 'MeRyzen artwork',
@@ -16,7 +19,11 @@ const member = {
         bio2 : 'Through the creations, he have successfully secured opportunities to sell NFT works, which connects he’s to a global community of artists. Have fun exploring 3D world!',
         work : 'https://www.instagram.com/me.ryzen/',
         foto: require('./assets/ryzen/ryzen.png'),
-        background: require('./assets/ryzen/banner - ryzen.png')
+        background: require('./assets/ryzen/banner - ryzen.png'),
+        instagram : 'https://www.instagram.com/me.ryzen/',
+        twitter : 'https://twitter.com/0x5zen',
+        behance:'https://www.behance.net/ryzen1',
+        email: 'me.ryzennn@gmail.com'
     },
     
     rio : {
@@ -27,7 +34,11 @@ const member = {
         bio2 : 'Rio starting freelance since 2020 as a Video Editor and currently focusing on 3D Design or Fashion Design, He represent all of things he got from life, love, and lust into their art.',
         work:'https://www.instagram.com/keepdahustle/',
         foto :require('./assets/rio/rio.png'),
-        background: require('./assets/rio/banner - rio.png')
+        background: require('./assets/rio/banner - rio.png'),
+        instagram :'https://www.instagram.com/strioaji_/',
+        twitter: 'https://twitter.com/strioaji_',
+        behance: 'https://www.behance.net/strioaji_',
+        matrix: 'https://matrix.to/#/@keepdahustle:matrix.org'
     },
     
     brian :{
@@ -37,7 +48,11 @@ const member = {
         bio2: 'He’s highly inspired from various landscape photographer, and he have a moto “joy of the painting”.',
         work: 'https://www.instagram.com/briyan_satrio/',
         foto: require('./assets/niozzin/brian.png'),
-        background: require('./assets/niozzin/banner - brian.png')
+        background: require('./assets/niozzin/banner - brian.png'),
+        instagram: 'https://www.instagram.com/briyan_satrio/',
+        twitter: 'https://twitter.com/niozzin',
+        behance: 'https://www.behance.net/niozzin',
+        website: 'https://niozzin.wixsite.com/niozzin'
     },
     
     adam : {
@@ -48,7 +63,9 @@ const member = {
         bio2 :'Since 2019, he starting from a video editor to a 3D artist until now, focusing on the surreal world and environment design with animated visual audio output so that the audience can feel his world.',
         work: 'https://www.instagram.com/xxalfsyr/',
         foto: require('./assets/adam/adam.png'),
-        background: require('./assets/adam/banner - adam.png')
+        background: require('./assets/adam/banner - adam.png'),
+        instagram: 'https://www.instagram.com/xxalfsyr',
+        twitter: 'https://twitter.com/xxalfsyr'
     },
     
     islan : {
@@ -58,7 +75,10 @@ const member = {
         bio2 :' He study about 3D since 2015 and advancing to do Art & 3D fashion design since last couple year, Now he currently as Chemical Engineering student at Jenderal Achmad Yani University.',
         work: 'https://www.instagram.com/islangrh/',
         foto: require('./assets/islan/islan.png'),
-        background: require('./assets/islan/banner - islan.png')
+        background: require('./assets/islan/banner - islan.png'),
+        instagram: 'https://www.instagram.com/islangrh/',
+        twitter: 'https://twitter.com/islangrh',
+        email: 'islangrh3d@gmail.com'
     },
     
     exhozt : {
@@ -69,7 +89,10 @@ const member = {
         bio2 :'He’s currently freelance and sell their Artwork Prints at some global marketplace art.',
         work: 'https://www.instagram.com/exhozt_/',
         foto: require('./assets/exhozt/daffa.png'),
-        background: require('./assets/exhozt/banner - daffa.png')
+        background: require('./assets/exhozt/banner - daffa.png'),
+        instagram: 'https://www.instagram.com/exhozt_/',
+        behance:'https://www.behance.net/exhozt',
+        youtube:' https://www.youtube.com/channel/UCVMwWNbECuoSAUtV5nUGaGw'
     },
     
     holikpc : {
@@ -79,7 +102,11 @@ const member = {
         bio2 :'With a developer mindset, he specialize in Landscape, Lighting, and 3D Visualization. He’s hoping everyone see their art can recovery their soul.',
         work: 'https://www.instagram.com/holikpc/',
         foto: require('./assets/holikpc/holik.png'),
-        background: require('./assets/holikpc/banner - holik.png')
+        background: require('./assets/holikpc/banner - holik.png'),
+        instagram:'https://www.instagram.com/holikpc/',
+        twitter:'https://twitter.com/holikpc',
+        behance:'https://www.behance.net/holikpc',
+        website:'https://holikpc3d.wixsite.com/portofolio'
     },
     
     Ghaza : {
@@ -89,7 +116,10 @@ const member = {
         bio2 :'He’s 21 years old and have a great interest in becoming a full-stack developer and anything related to that. Apart from that he spend spare time playing games and watching anime.',
         work: 'https://github.com/GhazaGG',
         foto: require('./assets/ghaza/ghaza.png'),
-        background: require('./assets/ghaza/ghaza-banner.jpg')
+        background: require('./assets/ghaza/ghaza-banner.jpg'),
+        github: 'https://github.com/GhazaGG',
+        instagram: 'https://www.instagram.com/ghazagg/',
+        email: 'ghazag972@gmail.com'
     },
     
     yopan : {
@@ -99,7 +129,8 @@ const member = {
         bio2 :' He’s hobby is drawing some Vector Art, Playing games and also cooking.',
         work: 'https://www.instagram.com/jofan_chan/',
         foto: require('./assets/yofan/yopan.png'),
-        background: require('./assets/yofan/banner - yopan.png')
+        background: require('./assets/yofan/banner - yopan.png'),
+        instagram:'https://www.instagram.com/jofan_chan/'
     },
     
     doni : {
@@ -109,7 +140,9 @@ const member = {
         bio2 :'He’s hobby is playing game such as Valorant and learning about code of programing.',
         work: 'https://twitter.com/RyoVLRT',
         foto: require('./assets/doni/ramdhoni.png'),
-        background: require('./assets/doni/banner - ramdhoni.png')
+        background: require('./assets/doni/banner - ramdhoni.png'),
+        instagram:'https://www.instagram.com/ramdhon1_/',
+        twitter:'https://twitter.com/RyoVLRT'
     },
     
     depol : {
@@ -119,7 +152,8 @@ const member = {
         bio2 :' He’s now highly inspired to Photograpy since he was on High School',
         work: 'https://www.instagram.com/deva_net/',
         foto: require('./assets/depoal/depoal.png'),
-        background: require('./assets/depoal/banner - depoal.png')
+        background: require('./assets/depoal/banner - depoal.png'),
+        instagram:'https://www.instagram.com/deva_net/'
     }
 }
 

@@ -4,6 +4,7 @@ import Work from './components/work/Work'
 import Artist from './components/artist/Artist'
 import Page from './components/personal page/Page'
 import { Route, Routes } from 'react-router-dom'
+import member from './member'
 
 
 
@@ -13,18 +14,18 @@ const App = () => {
       <Route path='/' element={<Home />}/>
       <Route path='/work' element={<Work />}/>
       <Route path='/artist' element={<Artist />}/>
-      <Route path='/pageVndttas' element={<Page data={vndttas} />}/>
-      <Route path='/pageRyzen' element={<Page data={ryzen} />}/>
-      <Route path='/pageRio' element={<Page data={rio} />}/>
-      <Route path='/pageBrian' element={<Page data={brian} />}/>
-      <Route path='/pageAdam' element={<Page data={adam} />}/>
-      <Route path='/pageIslan' element={<Page data={islan} />}/>
-      <Route path='/pageExhozt' element={<Page data={exhozt} />}/>
-      <Route path='/pageHolikPC' element={<Page data={holikpc} />}/>
-      <Route path='/pageGhaza' element={<Page data={Ghaza} />}/>
-      <Route path='/pageYopan' element={<Page data={yopan} />}/>
-      <Route path='/pageDoni' element={<Page data={doni} />}/>
-      <Route path='/pageDepol' element={<Page data={depol} />}/>
+      <Route path='/pageVndttas' element={<Page data={member.vndttas} />}/>
+      <Route path='/pageRyzen' element={<Page data={member.ryzen} />}/>
+      <Route path='/pageRio' element={<Page data={member.rio} />}/>
+      <Route path='/pageBrian' element={<Page data={member.brian} />}/>
+      <Route path='/pageAdam' element={<Page data={member.adam} />}/>
+      <Route path='/pageIslan' element={<Page data={member.islan} />}/>
+      <Route path='/pageExhozt' element={<Page data={member.exhozt} />}/>
+      <Route path='/pageHolikPC' element={<Page data={member.holikpc} />}/>
+      <Route path='/pageGhaza' element={<Page data={member.Ghaza} />}/> 
+      <Route path='/pageYopan' element={<Page data={member.yopan} />}/>
+      <Route path='/pageDoni' element={<Page data={member.doni} />}/>
+      <Route path='/pageDepol' element={<Page data={member.depol} />}/>
 
     </Routes>
 

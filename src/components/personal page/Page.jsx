@@ -10,6 +10,7 @@ import{MdEmail} from 'react-icons/md'
 import {CgWebsite} from 'react-icons/cg'
 import { AiFillGithub } from 'react-icons/ai'
 import {SiMatrix} from 'react-icons/si'
+import {AiFillYoutube} from 'react-icons/ai'
 
 
 const Page = (props) => {
@@ -28,6 +29,25 @@ const Page = (props) => {
         <h3 className='bio1'>{props.data.bio1}</h3>
         <h3 className="bio2">{props.data.bio2}</h3>
         <a href={props.data.work} className='artwork' target='_blank'>{props.data.nama} <HiOutlineExternalLink /></a>
+        <div className="sosial-media">
+          {props.data.instagram && (<a href='props.data.work' target='_blank'><AiFillInstagram /></a>)}
+
+          {props.data.twitter && (<a href={props.data.twitter} target='_blank'><AiOutlineTwitter /></a>)}
+
+          {props.data.behance && (<a href={props.data.behance} target='_blank'><AiOutlineBehance /></a>)}
+
+          {props.data.email && (<a href={props.data.email} target='_blank'><MdEmail /></a>)}
+
+          {props.data.website && (<a href={props.data.website} target='_blank'><CgWebsite /></a>)}
+
+          
+          {props.data.github && (<a href={props.data.github} target='_blank'><AiFillGithub /></a>)}
+
+          
+          {props.data.matrix && (<a href={props.data.matrix} target='_blank'><SiMatrix /></a>)}
+          
+          {props.data.youtube && (<a href={props.data.youtube} target='_blank'><AiFillYoutube /></a>)}
+        </div>
       </div>
       <nav className='page-nav'>
         <a onClick={()=> navigate("/")}>// HOME</a>
