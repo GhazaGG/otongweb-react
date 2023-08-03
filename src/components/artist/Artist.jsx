@@ -19,7 +19,7 @@ import ghaza from '../../assets/ghaza/ghaza.png'
 const Artist = () => {
     const navigate= useNavigate()
     const [isHovered, setIsHovered] = useState(false);
-    const isMobileView = window.innerWidth <= 767;
+    const isMobileView = window.innerWidth <= 991;
 
   return (
     <section className='artist-container'>
@@ -160,7 +160,7 @@ const Artist = () => {
             </div>
 
         </div>
-        <footer>&copy; 2023 .12px All Rights Reserved</footer>
+        {/* <footer>&copy; 2023 .12px All Rights Reserved</footer> */}
     </section>
   )
 }

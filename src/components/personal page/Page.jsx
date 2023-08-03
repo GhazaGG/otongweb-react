@@ -2,11 +2,20 @@ import React from 'react'
 import './page.css'
 import { useNavigate } from 'react-router-dom'
 import {HiOutlineExternalLink} from 'react-icons/hi'
+// social 
+import {AiFillInstagram} from 'react-icons/ai'
+import{AiOutlineTwitter} from 'react-icons/ai'
+import{AiOutlineBehance} from 'react-icons/ai'
+import{MdEmail} from 'react-icons/md'
+import {CgWebsite} from 'react-icons/cg'
+import { AiFillGithub } from 'react-icons/ai'
+import {SiMatrix} from 'react-icons/si'
+
 
 const Page = (props) => {
   const navigate = useNavigate()
   return (
-    <section className='container'>
+    <section className='container-page'>
       <div className='banner'>
         <img src={props.data.background} alt="" />
       </div>

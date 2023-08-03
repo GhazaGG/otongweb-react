@@ -1,4 +1,4 @@
-.container {
+.container-page {
     background-image: url(../../assets/background-artist.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,4 +79,69 @@ h3 {
 
 .page-nav a:hover{
     color: #FF8A00
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .container-page {
+        background-image: url(../../assets/background-artist.png);
+        background-position: center;
+    }
+    .member-content {
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+
+    .member-content img{
+        width: 150px;
+        margin-top: -80px;
+    }
+    .desc {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+    .page-nav{
+        font-size: 20px;
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-page {
+        background-image: url(../../assets/background-artist.png);
+        background-position: center;
+    }
+    .member-content {
+        text-align: center;
+        margin: 0rem 3rem;
+    }
+
+    .member-content img{
+        width: 200px;
+        margin-top: -110px;
+    }
+    .desc {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+    .page-nav{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 30px;
+    }
 }

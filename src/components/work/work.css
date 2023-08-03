@@ -139,3 +139,86 @@
     text-align: right;
     padding-right: 5rem;
 }
+
+
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+
+    .work-nav a {
+        font-size: 20px;
+        padding-left: 1rem;
+    }
+    .work-nav .title{
+        width: 33%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .title h1 span {
+        color: #FF8A00;
+        padding-right: .2rem;
+    }
+    
+    .work-nav .cc {
+        font-size: 15px;
+        width: 33%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+    .visitArtist {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    
+    .visitArtist .nama{
+        filter: brightness(100%);
+    }
+    .visitArtist .visit-button{
+        bottom: 10px;
+    }
+    
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+    .work-nav {
+        height: 80px;
+    }
+    .work-nav a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 30px;
+        padding-left: 1rem;
+    }
+    .work-nav .title{
+        width: 33%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .title h1 span {
+        color: #FF8A00;
+        padding-right: .2rem;
+    }
+    
+    .work-nav .cc {
+        font-size: 18px;
+        width: 33%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+    .visitArtist {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    
+    .visitArtist .nama{
+        filter: brightness(100%);
+    }
+    .visitArtist .visit-button{
+        bottom: 10px;
+    }
+    
+}

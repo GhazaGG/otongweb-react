@@ -7,6 +7,7 @@
     flex-direction: column;
 }
 .nav {
+    font-family: 'Inter', sans-serif;
     border: 2px solid black;
     display: flex;
     margin: 1rem 2rem;
@@ -95,6 +96,7 @@
     font-weight: 600;
     text-align: center;
     padding-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
 }
 @keyframes slide-up {
     0% {
@@ -141,6 +143,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .container .name h1 {
         padding-right: 300px;
-        background-color: #FF8A00;
+    }
+    .nav a {
+        font-size: 30px;
     }
 }

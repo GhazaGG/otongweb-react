@@ -109,45 +109,45 @@
 }
 
 .memberlist .img1{
-    border-radius: 0px 100px 0px 0px;
+    border-radius: 0px 50% 0px 0px;
 }
 .memberlist .img2{
-    border-radius: 0px 0px 100px 0px;
+    border-radius: 0px 0px 50% 0px;
 }
 .memberlist .img3{
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 50% 0px 0px 0px;
 }
 .memberlist .img4{
-    border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 50%;
 }
 .memberlist .img5{
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 50% 0px 0px 0px;
 }
 .memberlist .img6{
-    border-radius: 0px 0px 100px 0px;
+    border-radius: 0px 0px 50% 0px;
 }
 .memberlist .img7{
-    border-radius: 100px 100px 0px 100px;
+    border-radius: 50% 50% 0px 50%;
 }
 .memberlist .img8{
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 50% 0px 0px 0px;
 }
 .memberlist .img9{
-    border-radius: 100px 0px 100px 0px;
+    border-radius: 50% 0px 50% 0px;
 }
 .memberlist .img10{
-    border-radius: 100px;
+    border-radius: 50%;
 }
 .memberlist .img11{
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 50% 0px 0px 0px;
 }
 
 .artist-container footer {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 1rem;
-    margin-top: 13rem;
+    /* padding-bottom: 1rem; */
+    /* margin-top: 13rem; */
 }
 
 @keyframes slide-up {
@@ -168,8 +168,6 @@
         background-image: url(../../assets/Background-Members.png);
         background-size: cover;
         background-position: center;
-        /* width: 100%;
-        height: 100vh; */
     }
     .artist-nav{
         display: flex;
@@ -201,11 +199,8 @@
         position: relative;
         height: 100%;
     }
-    .member-container .tag {
-        position: absolute;
-        bottom: 50px;
-    }
     .memberlist{
+        margin: 0rem auto;
         padding-top: 40px;
         width: 90%;
         display: grid;
@@ -218,43 +213,10 @@
     }
     
     .memberlist img{
-        width: 115px;
-        height: 114px;
+        width: 105px;
+        height: 105px;
         cursor: pointer;
         transition: var(--transition);
-    }
-    .memberlist .img1{
-        border-radius: 0px 55px 0px 0px;
-    }
-    .memberlist .img2{
-        border-radius: 0px 0px 55px 0px;
-    }
-    .memberlist .img3{
-        border-radius: 55px 0px 0px 0px;
-    }
-    .memberlist .img4{
-        border-radius: 0px 0px 0px 55px;
-    }
-    .memberlist .img5{
-        border-radius: 55px 0px 0px 0px;
-    }
-    .memberlist .img6{
-        border-radius: 0px 0px 55px 0px;
-    }
-    .memberlist .img7{
-        border-radius: 55px 55px 0px 55px;
-    }
-    .memberlist .img8{
-        border-radius: 55px 0px 0px 0px;
-    }
-    .memberlist .img9{
-        border-radius: 55px 0px 55px 0px;
-    }
-    .memberlist .img10{
-        border-radius: 55px;
-    }
-    .memberlist .img11{
-        border-radius: 55px 0px 0px 0px;
     }
     .memberlist .visit {
         height: 25px;
@@ -282,4 +244,85 @@
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Styles for tablets */
+    .artist-nav{
+        align-items: center;
+        padding: 0rem 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid black;
+    }
+
+    .artist-nav a {
+        font-size: 30px;
+    }
+    .artist-container{
+        background-image: url(../../assets/Background-Members.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .member-container{
+        margin-top: 1rem;
+        display: block;
+        align-items: center;
+        padding: 0rem 0rem;
+        position: relative;
+    }
+
+    .memberlist{
+        margin: 0rem auto;
+        padding-top: 40px;
+        width: 90%;
+        display: grid;
+        gap: .3rem;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    .content {
+        padding: 2.5rem 2rem;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .memberlist img{
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    .artist-container footer {
+        display: none;
+    }
+    .member-container{
+        padding-top: 1rem;
+        /* background-color: #FF8A00; */
+    }
+    .member-container h1 {
+        font-size: 36px;
+    }
+    .memberlist .visit {
+        height: 35px;
+        visibility: visible;
+        opacity: 1;
+    }.visit .nama{
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 500;
+        color: white;
+        padding-left: 10px;
+    }
+    .visit .role{
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 300;
+        color: white;
+        padding-left: 10px;
+    }
+    .artist-container footer {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 0rem;
+        margin-top: 7rem;
+    }
 }

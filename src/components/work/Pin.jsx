@@ -6,6 +6,7 @@ import './work.css'
 function Pin({pinSize, imgSrc, artist, pageLink, }) {
   const navigate= useNavigate()
   const [isHovered, setIsHovered] = useState(false);
+  const isMobileView = window.innerWidth <= 991;
 
 
   return (
@@ -13,7 +14,7 @@ function Pin({pinSize, imgSrc, artist, pageLink, }) {
         <a href='' onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
             <img src={imgSrc} className='mainPic' alt="" />
-            {isHovered && <div className="visitArtist">
+            {(isHovered || isMobileView) && <div className="visitArtist">
           <div className='desc-container'>
             <p className="nama">{artist}</p>
             <button className='visit-button' onClick={()=> navigate(pageLink)}>Visit</button>
