@@ -1,90 +1,72 @@
+const profiles = [
+    { name: 'Vndttas', page: '/pageVndttas' },
+    { name: 'MeRyzen', page: '/pageRyzen' },
+    { name: 'Satrio Aji', page: '/pageRio' },
+    { name: 'Niozzin', page: '/pageNiozzin' },
+    { name: 'Adam', page: '/pageAdam' },
+    { name: 'Islan', page: '/PageIslan' },
+    { name: 'Exhozt', page: '/pageExhozt' },
+    { name: 'HolikPC', page: '/pageHolikPC' },
+    { name: 'Ghaza', page: '/pageGhaza' },
+    { name: 'Yopan', page: '/pageYopan' },
+    { name: 'Doni', page: '/pageDoni' },
+    { name: 'Depoal', page: '/pageDepol' }
+];
+
+function getProfileByName(profileName) {
+    return profiles.find(profile => profile.name === profileName);
+}
+
+const vndttasProfile = getProfileByName('Vndttas')
+const meryzenProfile = getProfileByName('MeRyzen')
+const satrioProfile = getProfileByName("Satrio Aji")
+const niozzinProfile = getProfileByName('Niozzin')
+const adamProfile = getProfileByName('Adam')
+const islanProfile = getProfileByName('Islan')
+const exhoztProfile = getProfileByName('Exhozt')
+const ghazaProfile = getProfileByName('Ghaza')
+const yopanProfile = getProfileByName('Yopan')
+const doniProfile = getProfileByName('Doni')
+const depolProfile = getProfileByName('Depoal')
 
 
 const data = [
     {
         id : 1,
-        imgSrc : require('../../assets/vendttas/ven.png'),
-        artist:'VNDTTAS',
-        pageLink:'/pageVndttas',
-        size :'small'
+        imgSrc : require('../../assets/artwork/ven/Beliau.png'),
+        artist:vndttasProfile.name,
+        pageLink:vndttasProfile.page,
+        size :'large'
     },
     {
         id : 2,
-        imgSrc : require('../../assets/ryzen/ryzen.png'),
-        artist:'MERYZEN',
-        pageLink:'/pageRyzen',
-        size :'medium'
-    },
-    {
-        id : 4,
-        imgSrc : require('../../assets/rio/rio.png'),
-        artist:'Satrio Aji',
-        pageLink:'/pageRio',
-        size :'large'
-    },
-    {
-        id : 5,
-        imgSrc : require('../../assets/niozzin/brian.png'),
-        artist:'',
-        pageLink:'',
+        imgSrc : require('../../assets/artwork/ven/Nissan 1 ig2.png'),
+        artist:vndttasProfile.name,
+        pageLink:vndttasProfile.page,
         size :'small'
     },
     {
-        id : 6,
-        imgSrc : require('../../assets/adam/banner - adam.png'),
-        artist:'',
-        pageLink:'',
-        size :'large'
-    },
-    {
-        id : 7,
-        imgSrc : require('../../assets/islan/islan.png'),
-        artist:'',
-        pageLink:'',
+        id : 3,
+        imgSrc : require('../../assets/artwork/ven/Nissan 2 ig2.png'),
+        artist:vndttasProfile.name,
+        pageLink:vndttasProfile.page,
         size :'small'
     },
-    {
-        id : 8,
-        imgSrc : require('../../assets/holik1.jpg'),
-        artist:'holik',
-        pageLink:'/pageHolikPC',
-        size :'large'
-    },
-    {
-        id : 9,
-        imgSrc : require('../../assets/holik2.jpg'),
-        artist:'holik',
-        pageLink:'/pageHolikPC',
-        size :'large'
-    },
-    {
-        id : 10,
-        imgSrc : require('../../assets/holik3.png'),
-        artist:'holik',
-        pageLink:'/pageHolikPC',
-        size :'medium'
-    },
-    {
-        id : 11,
-        imgSrc : require('../../assets/Group_2.png'),
-        artist:'holik',
-        pageLink:'/pageHolikPC',
-        size :'large'
-    },
-    {
-        id : 12,
-        imgSrc : require('../../assets/image.png'),
-        artist:'Satrio AJi',
-        pageLink:'/pageRio',
-        size :'medium'
-    },
-    {
-        id : 13,
-        imgSrc : require('../../assets/Exhozt-16.jpg'),
-        artist:'holik',
-        pageLink:'/pageExhozt',
-        size :'large'
-    },
+    // {
+    //     id : 4,
+    //     imgSrc : require(''),
+    //     artist:vndttasProfile.name,
+    //     pageLink:vndttasProfile.page,
+    //     size :'small'
+    // },
+    // {
+    //     id : 5,
+    //     imgSrc : require(''),
+    //     artist:vndttasProfile.name,
+    //     pageLink:vndttasProfile.page,
+    //     size :'small'
+    // },
+
 ]
 
 export default data
