@@ -5,20 +5,31 @@
 }
 
 .admin-nav{
-    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.navlink{
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 2rem;
 }
 
-.admin-nav a{
-    padding: .8rem;
+.user{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.admin-nav .navlink a{
+    padding: .7rem 3rem;;
+    text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     transition: var(--transition);
 }
 
-.admin-nav a:hover {
+.admin-nav .navlink a:hover {
     border: 1px  solid #FF8A00;
     font-weight: 400;
     color: black;
@@ -27,14 +38,13 @@
 }
 
 .admin-content{
-    margin:0rem 8rem;
+    margin:2rem 8rem;
     height: 80%;
-    background-color: #FF8A00;
 }
 
 .logout{
-    position: absolute;
-    right: 30px;
+    margin-top: 2rem;
+    font-size: 15px;
     padding: .7rem 3rem;
     cursor: pointer;
     background-color: #FF8A00;
