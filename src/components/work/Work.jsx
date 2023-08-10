@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './work.css'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Pin from './Pin'
 import data from './imageObject'
+import { UserContext } from '../../UserContext';
+
 
 const Work = () => {
   const navigate = useNavigate()
   const [scrolled, setScrolled] = useState(false)
+  const {user} = useContext(UserContext);
 
   useEffect(()=> {
     const handleScroll = ()=> {
@@ -32,7 +35,7 @@ const Work = () => {
         <div className='title'>
           <h1><span>M E M B E R S</span> W O R K S</h1>
         </div>
-        <h1 className='cc'>&copy; .12px</h1>
+        <h1 className='cc'></h1>
       </nav>
 
       

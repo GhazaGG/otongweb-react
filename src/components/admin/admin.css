@@ -1,0 +1,51 @@
+.admin-container{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-image: url('../../assets/Background-Home.png');
+}
+
+.admin-nav{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.admin-nav a{
+    padding: .8rem;
+    font-weight: 400;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.admin-nav a:hover {
+    border: 1px  solid #FF8A00;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    border-radius: .3rem;
+}
+
+.admin-content{
+    margin:0rem 8rem;
+    height: 80%;
+    background-color: #FF8A00;
+}
+
+.logout{
+    position: absolute;
+    right: 30px;
+    padding: .7rem 3rem;
+    cursor: pointer;
+    background-color: #FF8A00;
+    color: white;
+    border-radius: 15px;
+    transition: var(--transition);
+
+}
+
+.logout:hover{
+    background-color: transparent;
+    color: #FF8A00;
+    border: 1px solid #FF8A00;
+}
