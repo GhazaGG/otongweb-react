@@ -1,8 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../../UserContext'
 import { useNavigate, useParams } from 'react-router-dom'
+import Artwork from './Artwork'
 import "./admin.css"
 import axios from 'axios'
+import {AiOutlineUser} from 'react-icons/ai'
+import {BiBrush, BiLogOut} from 'react-icons/bi'
+
 
 // tutorial after acount page
 
@@ -43,31 +47,41 @@ const Admin = () => {
     
     
     return (
-        <div className='admin-container'>
-            <nav className='admin-nav'>
-                <h1 className='user'>Hi {user.username}!</h1>
-                    <div className="navlink">
-                        <a className={`home ${activeView === 'member' ? 'active' : ''}`} onClick={() => setActiveView('member')}>.12Px Member</a>
-                        <a className={`home ${activeView === 'artwork' ? 'active' : ''}`} onClick={() => setActiveView('artwork')}>.12Px Artwork</a>
+            <section>
+                <div className='admin-container'>
+                    <aside className='admin-nav'>
+                        <h1 className='user'>Hi {user.username}!</h1>
+                        <div className="sidebar">
+                            <a className={`home ${activeView === 'member' ? 'active' : ''}`} onClick={() => setActiveView('member')}>
+                                <AiOutlineUser />
+                                Member
+                            </a>
+                            <a className={`home ${activeView === 'artwork' ? 'active' : ''}`} onClick={() => setActiveView('artwork')}>
+                                <BiBrush />
+                                Artwork
+                            </a>
+                            <a onClick={logout} className='logout'>
+                                <BiLogOut />
+                                Logout
+                            </a>
+                        </div>
+                    </aside>
+
+                    <div className="admin-content">
+                            {activeView === 'member' &&(
+                                <div className="admin-member-container">
+                                    member
+                                </div>
+                            )}
+
+                            {activeView === 'artwork'&&(
+                                <Artwork />
+                            )}
                     </div>
-                <button onClick={logout} className='logout'>Logout</button>
-            </nav>
 
-            <div className="admin-content">
-                    {activeView === 'member' &&(
-                        <div className="admin-member-container">
-                            member
-                        </div>
-                    )}
+                </div>
+            </section>
 
-                    {activeView === 'artwork'&&(
-                        <div className="artwork-container">
-                            artwork
-                        </div>
-                    )}
-            </div>
-
-        </div>
     )
 }
 

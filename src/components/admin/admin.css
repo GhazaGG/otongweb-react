@@ -1,61 +1,147 @@
-.admin-container{
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
+section{
     background-image: url('../../assets/Background-Home.png');
 }
 
-.admin-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
-}
-.navlink{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+.admin-container{
+    display: grid;
+    width: 100%;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto;
+    font-family: 'Inter', sans-serif;
 }
 
-.user{
+aside {
+    height: 100vh;
+}
+
+aside h1{
+    padding-top: 1.5rem;
     text-align: center;
-    margin-top: 2rem;
+    font-size: 2rem;
 }
 
-
-.admin-nav .navlink a{
-    padding: .7rem 3rem;;
-    text-align: center;
-    font-weight: 400;
-    font-size: 15px;
-    transition: var(--transition);
-}
-
-.admin-nav .navlink a:hover {
-    border: 1px  solid #FF8A00;
-    font-weight: 400;
-    color: black;
-    cursor: pointer;
-    border-radius: .3rem;
-}
-
-.admin-content{
-    margin:2rem 8rem;
-    height: 80%;
-}
-
-.logout{
-    margin-top: 2rem;
-    font-size: 15px;
-    padding: .7rem 3rem;
-    cursor: pointer;
+aside .sidebar {
     background-color: #FF8A00;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 88vh;
+    border-radius: 0 15px 15px 0;
+    top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar:hover{
+    box-shadow: none;
+}
+
+aside .sidebar a{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
     color: white;
-    border-radius: 15px;
+    height: 3rem;
+    gap: 1rem;
+    position: relative;
+    padding-left: 2rem;
+    transition: all .3 ease;
+    font-size: 20px;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a:hover{
+    margin-left: 1rem;
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.admin-content {
+    margin: 5rem 3rem 2rem 1rem;
+}
+
+
+/* artwork page */
+
+.artwork-container {
+    width: 100%;
+}
+
+.add{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 10rem;
+    color: white;
+    background-color: #FF8A00;
+    border-radius: 1rem;
+    cursor: pointer;
     transition: var(--transition);
 
 }
 
-.logout:hover{
+.add:hover {
     background-color: transparent;
     color: #FF8A00;
     border: 1px solid #FF8A00;
+}
+
+.upload-form h2{
+    margin-top: .7rem;
+    margin-bottom: .3rem;
+}
+.upload-form input{
+    width: 100%;
+}
+
+.upload-form select{
+    border-radius: 10px;
+    padding: 0px 10px;
+    height: 35px;
+    border: .5px solid gray;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.upload-form .link-art{
+    display: flex;
+}
+
+.upload-form .link-art input{
+    width: 90%;
+}
+
+.upload-form .link-art button {
+    width: 9%;
+    margin-left: 1%;
+}
+.navigation-button{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return{
+    width: 150px;
+}
+
+.submitUpload {
+    width: 150px;
+}
+
+
+.gallery{
+    display: grid;
+}
+
+.artwork-item img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    overflow: hidden;
 }

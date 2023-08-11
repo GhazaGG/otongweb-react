@@ -36,6 +36,7 @@ form button {
     background-color:#FF8A00 ;
     color: white;
     cursor: pointer;
+    transition: var(--transition);
 }
 form button:hover {
     background-color: white;
