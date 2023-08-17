@@ -3,13 +3,14 @@ import './work.css'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Pin from './Pin'
-import data from './imageObject'
 import { UserContext } from '../../UserContext';
+import axios from 'axios'
 
 
 const Work = () => {
   const navigate = useNavigate()
   const [scrolled, setScrolled] = useState(false)
+  const [artworkData, setArtworkData] = useState([])
   const {user} = useContext(UserContext);
 
   useEffect(()=> {
@@ -28,8 +29,16 @@ const Work = () => {
     };
   }, [])
 
+  useEffect (()=>{
+    axios.get('/get-artwork').then(response => {
+      setArtworkData(response.data)
+    }).catch(error =>{
+      console.error('Eror fetching data')
+    })
+  })
+
   return (
-    <section className='work-container' id='work'>
+    <div className='work-container' id='work'>
       <nav className={scrolled ? 'work-nav scrolled' : 'work-nav'}>
         <a className='home' onClick={()=> navigate("/")}>// HOME</a>
         <div className='title'>
@@ -41,12 +50,12 @@ const Work = () => {
       
       <div className='pin-container'>
         {
-          data && data.map((data)=>(
-            <Pin key={data.id} pinSize = {data.size} imgSrc={data.imgSrc} artist={data.artist} pageLink={data.pageLink}/>
+          artworkData && artworkData.map((artwork)=>(
+            <Pin key={artwork._id} pinSize = {artwork.size} imgSrc={artwork.imageLink} artist={artwork.artist} pageLink={artwork.pageLink}/>
           ))
         }
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -91,7 +91,7 @@ const Artwork = () => {
                     value={size}
                     onChange={(e)=> setSize(e.target.value)}>
                         <option value="small">Small</option>
-                        <option value="medium">Medium</option>
+                        <option value="medium">Medium</option>  
                         <option value="large">Large</option>
                     </select>
                     <h2>Link Artwork</h2>
