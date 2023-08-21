@@ -1,6 +1,4 @@
-section{
-    background-image: url('../../assets/Background-Home.png');
-}
+
 
 .admin-container{
     display: grid;
@@ -140,9 +138,36 @@ aside .sidebar a:hover{
     grid-template-columns: auto auto auto;
 }
 
+.artwork-item{
+    padding: 1rem;
+
+}
+
+
+
 .artwork-item img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     overflow: hidden;
+}
+
+.artwork-item p{
+    font-size: 15px;
+}
+
+.artwork-container button{
+    background-color: #FF8A00;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    margin-top: .3rem;
+    transition: var(--transition);
+}
+
+.artwork-container button:hover{
+    background-color: transparent;
+    border: 1px solid #FF8A00;
+    color: black;
 }

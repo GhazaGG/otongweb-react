@@ -41,6 +41,19 @@ const Artwork = () => {
             console.error('Eror fetching artwork data', error)
         })
     })
+    
+    const handleDelete = async (artworkId) => {
+        const confirmed = window.confirm(`apakah benar mau menghapus artwork dengan id ${artworkId} ?`);
+        if (confirmed) {
+            try {
+                await axios.delete(`/delete-artwork/${artworkId}`);
+                const response = await axios.get('/get-artwork');
+                setArtworkData(response.data);
+            } catch (error) {
+                console.error('Error deleting artwork', error);
+            }
+        }
+    };
 
     return (
         <div className='artwork-container'>
@@ -121,6 +134,8 @@ const Artwork = () => {
                             <img className='AdminImg' src={artwork.imageLink} alt={`Artwork by ${artwork.artist}`} />
                             <p>Artist: {artwork.artist}</p>
                             <p>Size: {artwork.size}</p>
+                            <p>Id: {artwork._id}</p>
+                            <button onClick={() => handleDelete(artwork._id)}>Hapus</button>
                         </div>
                     ))}
                 </div>
