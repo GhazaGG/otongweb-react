@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../../UserContext'
+import MemberList from '../artist/MemberList'
 import { useNavigate, useParams } from 'react-router-dom'
 import Artwork from './Artwork'
 import "./admin.css"
@@ -70,7 +71,7 @@ const Admin = () => {
                     <div className="admin-content">
                             {activeView === 'member' &&(
                                 <div className="admin-member-container">
-                                    member
+                                    <MemberList />
                                 </div>
                             )}
 

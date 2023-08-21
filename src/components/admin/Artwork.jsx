@@ -135,7 +135,7 @@ const Artwork = () => {
                             <p>Artist: {artwork.artist}</p>
                             <p>Size: {artwork.size}</p>
                             <p>Id: {artwork._id}</p>
-                            <button onClick={() => handleDelete(artwork._id)}>Hapus</button>
+                            <button onClick={() => handleDelete(artwork._id)}>Delete</button>
                         </div>
                     ))}
                 </div>
