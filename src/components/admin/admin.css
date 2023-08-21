@@ -137,6 +137,7 @@ aside .sidebar a:hover{
 
 .gallery{
     display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .artwork-item img{
